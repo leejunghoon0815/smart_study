@@ -1,0 +1,75 @@
+
+DTD(Document Type Definition) 는 "문서형식선언" 입니다.
+HTML 문서는 문서형식 선언(비공식적으로는 "doctype")으로 시작해야한다 라고 규정합니다.
+
+브라우저 에서는 doctype의 기능은 렌더링모드를 지시하는것이며, 부분적으로는 쿼크모드를 피하기 위한 목적도있습니다.
+원래는 문서형식정의(DTD)에 기반한 SGML 도구를 통하여 HTML문서를 파싱과 유효를 확인을 가능하게 하려고 하는것이었습니다.
+
+
+
+
+여기서의 간단한 용어설명
+쿼크모드 : 준표준모드
+렌더링 : 코드를 화면으로 보여주기위한 과정
+파싱 : 일종에 검색과 같은 형태
+유효 : 맞는지 안맞는지 여부
+
+
+요약
+간단하게 말해 브라우저는 현재 보여줄 HTML코드를 화면으로 보여주기 위해 랜더링 이라는 작업을합니다. 이때 의 정보중 이문서가 어떠한 타입의 문서형태로 만들어젓는지 알아낼수가 있죠, 그러면 그정보를 기반으로 문서에 선언된 문서타입을 기반으로 해당문서를 검사합니다, 이것을 파싱이라고 생각해두면되겠습니다. 그 파싱을 통하여 올바르게 썻는지를 검사하는는데 이것을 이것이 맞는지 안맞는지를 확인하죠.
+
+이런행위를 함으로 써. 뭐..
+현재 제작된 HTML 문서가 어떤버전이며, 어떠한 표준으로 보여줄 지를 결정할수 있게되는것이라고 보시면됩니다.
+
+
+
+
+
+
+
+HTML 버전별 DTD선언
+
+HTML 4.01 Strict
+이 DTD는 모든 HTML 요소 및 속성이 포함되어 있지만 font 와 프레임 셋은 허용되지 않습니다.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+
+HTML 4.01 Transitional
+이 DTD는 모든 HTML 요소를 포함하고, 프레임 셋은 허용되지 않습니다.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+HTML 4.01 Frameset
+이 DTD는 HTML 4.01 과도 동일하지만 프레임 콘텐츠의 사용을 허용한다.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+
+
+XHTML 1.0 Strict
+이 DTD는 모든 HTML 요소 및 속성이 포함되어 있지만 (글꼴 등) 표상 또는 사용되지 않는 요소를 포함하지 않습니다. 프레임 셋은 허용되지 않습니다. 마크 업 또한 잘 구성된 XML을 작성해야합니다.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+XHTML 1.0 Transitional
+이 DTD는 모든 HTML 요소를 포함하고 (글꼴 등)을 표상하고 사용되지 않는 요소를 포함, 속성. 프레임 셋은 허용되지 않습니다. 마크 업 또한 잘 구성된 XML을 작성해야합니다.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+XHTML 1.0 Frameset
+이 DTD XHTML 1.0 과도기적 동일하지만, 프레임 콘텐츠의 사용을 허용한다.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+
+
+XHTML 1.1
+이 DTD는 엄격한 1.0 XHTML에 동일하지만 (동아시아 언어에 대한 루비 지원을 제공하기 위해, 예를 들어) 모듈을 추가 할 수 있습니다.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+HTML 5
+<!DOCTYPE html>
